@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main-responsive.css">
+    <link rel="stylesheet" href="./css/signIn.css">
+    <title>School_Contest[2026-1]</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <!-- Logo -->
+        <span>
+            <a href="index.html">
+                <img src="/images/logo.png" alt="logo" />
+            </a>
+        </span>
+
+        <!-- Navigation -->
+        <ul>
+            <li>
+                <a href="index.html">الرئيسية</a>
+            </li>
+            <li>
+                <a href="activities.html">الأنشطة</a>
+            </li>
+            <li>
+                <a href="challenges.html">المساقات</a>
+            </li>
+            <li>
+                <a href="customize.html">تخصيص</a>
+            </li>
+            <li>
+                <a href="whoWe.html">من نحن</a>
+            </li>
+        </ul>
+
+        <!-- SignIn Button -->
+        <button class="signIn">
+            <a href="signIn.html">تسجيل الدخول</a>
+        </button>
+
+        <!-- Menu Button -->
+        <div class="menu">
+            <button>
+                <i data-lucide="square-menu"></i>
+            </button>
+            <ul>
+                <li>
+                    <a href="index.html">الرئيسية</a>
+                </li>
+                <li>
+                    <a href="activities.html">الأنشطة</a>
+                </li>
+                <li>
+                    <a href="challenges.html">المساقات</a>
+                </li>
+                <li>
+                    <a href="customize.html">تخصيص</a>
+                </li>
+                <li>
+                    <a href="whoWe.html">من نحن</a>
+                </li>
+                <li class="signIn">
+                    <a href="signIn.html">تسجيل الدخول</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- Sign In -->
+    <section class="main-section signIn-section">
+        <header>
+            <h1>مرحبا بك مجددا 👋</h1>
+            <p>سجل دخولك واستمتع بمختلف المسابقات والأنشطة</p>
+        </header>
+
+        <form action="">
+            <section class="col-inputs">
+                <div class="input-label-div">
+                    <label for="email">البريد الإلكتروني</label>
+                    <div class="input-div">
+                        <input type="email" name="email" required>
+                    </div>
+                </div>
+                <div class="password-wrapper">
+                    <div class="input-label-div">
+                        <label for="">كلمة المرور</label>
+                        <div class="input-div">
+                            <input type="password" name="password" id="">
+                            <i data-lucide="eye-off" class="password-eye eye-off"></i>
+                            <i data-lucide="eye" class="password-eye eye-open"></i>
+                        </div>
+                    </div>
+                    <div class="remember-password">
+                        <label>
+                            <input type="checkbox" name="remember">
+                            تذكرني
+                        </label>
+                        <span class="forget-password">نسيت كلمة المرور ؟</span>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <button type="submit">تسجيل الدخول</button>
+                <h4>ليس لديك حساب؟ <span><a href="register.html">إنشاء حساب جديد</a></span></h4>
+            </footer>
+        </form>
+        <article class="error-message">
+            <h2>تسجيل الدخول غير مفعّل</h2>
+            <p>ستتوفر قريبًا لتتمكن من حفظ تقدمك والانضمام للتحديات البرمجية. تابع التحديثات أو تواصل مع الإدارة للمزيد من التفاصيل</p>
+        </article>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <ul>
+            <li>
+                <a href="">
+                    <i data-lucide="twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i data-lucide="twitch"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i data-lucide="instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i data-lucide="youtube"></i>
+                </a>
+            </li>
+        </ul>
+
+        <article>
+            <span>&copy; 2025 منافس. جميع الحقوق محفوظة.</span>
+            |
+            <span>
+                من تطوير فريق مدرسة عليى بن جاسم
+            </span>
+        </article>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/sign.js"></script>
+</body>
+</html>

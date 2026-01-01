@@ -1,0 +1,12 @@
+/* Join Section */
+section.join {
+    width: 100%;
+    max-width: var(--width-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-46);
+    text-align: center;
+    height: 660px;
+}

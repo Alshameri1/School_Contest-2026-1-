@@ -1,0 +1,657 @@
+/* Hero */
+.hero {
+    width: 100%;
+    height: 990px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-blue-25);
+    overflow: hidden;
+}
+
+.hero section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-20);
+    width: 100%;
+    max-width: var(--width-main);
+}
+
+.hero section .text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: var(--gap-36);
+    max-width: 750px;
+}
+.hero section .text-section article {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    gap: var(--gap-24)
+}
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-12);
+}
+
+.hero section .images-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+    width: 100%;
+    max-width: 650px;
+}
+.hero section .images-section img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius-24);
+}
+.hero section .images-section img:first-child {
+    width: 524px;
+    height: 655px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero section .images-section img:last-child {
+    width: 600px;
+    height: 403px;
+    position: absolute;
+    top: 45%;
+    right: 10%;
+}
+
+
+
+/* Stats Section*/
+.stats {
+    width: 100%;
+    max-width: var(--width-main);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-46);
+    align-items: center;
+}
+
+.stats .text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--gap-24)
+}
+
+.stats div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    gap: var(--gap-20);
+}
+
+
+.stats div article {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: var(--gap-20);
+}
+
+.stats div article span {
+    display: flex;
+    padding: var(--padding-12);
+    border-radius: 20px;
+    background-color: var(--bg-blue-25);
+}
+.stats div article span svg {
+    width: 51px;
+    height: 51px;
+    stroke-width: 1.5px;
+}
+
+.stats div article article {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--gap-6);
+}
+.stats div article article h1 {
+    font-size: var(--font-size-32);
+    font-weight: 600;
+}
+
+.stats div article article p {
+    font-size: var(--font-size-18);
+    font-weight: 300;
+    line-height: var(--line-height-34);
+}
+
+
+/* Challenges Section */
+.challenges .challenges-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-46);
+    align-items: center;
+}
+
+.challenges .challenges-wrapper > header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-6);
+}
+.challenges .challenges-wrapper > header a {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-12);
+}
+.challenges .challenges-wrapper > header a svg {
+    width: 28px;
+    height: 28px;
+}
+
+.challenges .challenges-wrapper > header p {
+    font-size: var(--font-size-20);
+    font-weight: 300;
+    text-align: center;
+    line-height: var(--line-height-34);
+}
+
+
+/* features Section */
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-36);
+}
+
+.features > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    max-width: var(--width-main);
+    gap: 142px;
+}
+.features > div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-30);
+    background-color: var(--bg-primary);
+}
+.features > div div header {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-half-primary);
+}
+
+.features > div div header svg {
+    width: 45px;
+    height: 45px;
+}
+
+.features > div div article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-16);
+    align-items: center;
+    width: 100%;
+    max-width: 270px;
+}
+.features > div div article * {
+    text-align: center;
+}
+.features > div div article h2 {
+    font-size: var(--font-size-22);
+    font-weight: 700;
+}
+.features > div div article p {
+    font-size: var(--font-size-16);
+    font-weight: 400;
+}
+.features > div div header {
+    position: relative;
+}
+.features > div > div header::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 110%;
+    transform: translateY(-50%);
+    width: 305px;
+    height: 1px;
+    background-color: var(--border-half-primary);
+}
+
+.features > div > div:last-child header::after {
+    display: none;
+}
+
+
+/* Benefits Sectoins */
+.benefit {
+    width: 100%;
+    max-width: var(--width-main);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-30);
+}
+
+.benefit article {
+    width: 100%;
+    max-width: 970px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-36);
+}
+.benefit img {
+    width: 600px;
+    height: 420px;
+    border-radius: var(--border-radius-24);
+}
+.benefit article header {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    gap: var(--gap-12);
+}
+/* Right */
+.benefit.benefit-right {
+    flex-direction: row-reverse;
+}
+
+
+/* FAQ Section */
+.faq {
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    align-items: start;
+    padding: var(--padding-50);
+    border-radius: 40px;
+    background-color: var(--bg-secondary);
+    width: 100%;
+    max-width: var(--width-main);
+}
+.faq section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.faq section details {
+    padding: var(--padding-25) 0;
+    border-bottom: 1px solid var(--border-third);
+    cursor: pointer;
+}
+.faq section details summary {
+    font-size: var(--font-size-22);
+    font-weight: 500;
+}
+.faq section details p {
+    font-size: var(--font-size-16);
+    font-weight: 400;
+    line-height: var(--line-height-34);
+    margin-top: 14px;
+}
+
+
+/* Responsive */
+@media (max-width: 1580px) {
+    /* Hero Section */
+    .hero {
+        height: 880px;
+    }
+    .hero section .images-section {
+        max-width: 520px;
+    }
+    .hero section .images-section img:first-child {
+        width: 368px;
+        height: 499px;
+        left: -5%;
+    }   
+
+    .hero section .images-section img:last-child {
+        width: 470px;
+        height: 273px;
+        top: 50%;
+    }
+
+    /* Stats Section */
+    .stats div article span {
+        border-radius: 16px;
+    }
+    .stats div article span svg {
+        width: 42px;
+        height: 42px;
+    }
+
+    /* Challenges Section */
+    .challenges .challenges-wrapper > header a svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+
+    /* Features Section */
+    .features > div div header {
+        width: 76px;
+        height: 76px;
+    }
+
+    .features > div div header svg {
+        width: 38px;
+        height: 38px;
+    }
+    .features > div > div header::after {
+        width: 265px;
+    }
+
+    /* Benefits Section */
+    .benefit img {
+        width: 550px;
+        height: 370px;
+    }
+
+    /* FAQ Section */
+    .faq {
+        gap: 60px;
+    }
+}
+
+
+
+@media (max-width: 1330px) {
+    /* Hero Section */
+    .hero {
+        height: 770px;
+    }
+    .hero section .images-section {
+        max-width: 470px;
+    }
+    .hero section .images-section img:first-child {
+        width: 318px;
+        height: 449px;
+        left: -10%;
+    }   
+
+    .hero section .images-section img:last-child {
+        width: 400px;
+        height: 223px;
+        top: 58%;
+        right: 15%;
+    }
+
+    /* Stats Section */
+    .stats div article span {
+        border-radius: 14px;
+    }
+    .stats div article span svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Features Section */
+    .features > div div header {
+        width: 68px;
+        height: 68px;
+    }
+    .features > div div header svg {
+        width: 34px;
+        height: 34px;
+    }
+
+    .features > div > div header::after {
+        width: 225px;
+    }
+    
+    .features > div div article p {
+        line-height: 26px;
+    }
+
+    /* Benefits Section */
+    .benefit img {
+        width: 490px;
+        height: 310px;
+    }
+
+    /* FAQ Section */
+    .faq {
+        gap: 50px;
+        border-radius: 30px;
+    }
+}
+
+
+@media (max-width: 1120px) {
+    .features > div > div header::after {
+        width: 196px;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    /* Hero Section */
+    .hero {
+        height: 660px;
+    }
+    .hero section .images-section {
+        max-width: 420px;
+    }
+    .hero section .images-section img:first-child {
+        width: 275px;
+        height: 399px;
+        left: -20%;
+    }   
+
+    .hero section .images-section img:last-child {
+        width: 340px;
+        height: 183px;
+        top: 62%;
+        right: 22%;
+    }
+
+    /* Stats Section */
+    .stats div article span {
+        border-radius: 10px;
+    }
+    .stats div article span svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Challenges Section */
+    .challenges .challenges-wrapper > header a svg {
+        width: 21px;
+        height: 21px;
+    }
+
+     /* Features Section */
+    .features > div div header {
+        width: 52px;
+        height: 52px;
+    }
+    .features > div div header svg {
+        width: 26px;
+        height: 26px;
+    }
+    .features > div > div header::after {
+        width: 174px;
+    }
+    .features > div div article p {
+        line-height: 21px;
+    }
+
+    /* Benefits Section */
+    .benefit {
+        gap: 20px;
+    }
+    .benefit img {
+        width: 440px;
+        height: 260px;
+    }
+
+    /* FAQ Section */
+    .faq {
+        gap: 40px;
+        border-radius: 20px;
+    }
+}
+
+
+@media (max-width: 845px) {
+     /* Hero Section */
+    .hero {
+        height: 770px;
+    }
+    .hero section {
+        gap: 40px;
+    }
+    .hero section .images-section {
+        display: none;
+    }
+    .hero section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero section .text-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Stats Section */
+    .stats div {
+        flex-direction: column;
+        gap: var(--gap-30);
+    }
+    .stats div article span {
+        border-radius: 20px;
+    }
+    .stats div article span svg {
+        width: 46px;
+        height: 46px;
+        stroke-width: 1.5px;
+    }
+
+    /* Challenges Section */
+    .challenges .challenges-wrapper > header a svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Features Section */
+    .features > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        background-color: var(--border-half-primary);
+    }
+    
+    .features > div > div header::after {
+        display: none;
+    }
+    .features > div div {
+        height: 100%;
+        padding: var(--padding-40);
+    }
+    .features > div div header {
+        width: 76px;
+        height: 76px;
+    }
+    .features > div div header svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* Benefits Section */
+    .benefit {
+        gap: var(--gap-30);
+    }
+    .benefit, .benefit.benefit-right {
+        flex-direction: column;
+    }
+    .benefit article {
+        align-items: center;
+        gap: var(--gap-24);
+    } 
+    .benefit img {
+        width: 100%;
+        max-width: 600px;
+        height: 320px;
+        border-radius: var(--border-radius-24);
+    }
+
+    .faq {
+        flex-direction: column;
+        gap: var(--gap-24);
+    }
+
+    .faq section {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 670px) {
+    .hero {
+        height: 605px;
+    }
+
+    .stats div article span {
+        border-radius: 14px;
+    }
+    .stats div article span svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* Features Section */
+    .features > div {
+        gap: 0.6px;
+    }
+    .features > div div header {
+        width: 64px;
+        height: 64px;
+    }
+    .features > div div header svg {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .benefit img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 510px) {
+    .features > div {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 330px) {
+    .hero {
+        height: 880px;
+    }
+    .button-wrapper {
+        flex-direction: column;
+    }
+}

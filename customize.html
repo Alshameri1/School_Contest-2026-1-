@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main-responsive.css">
+    <link rel="stylesheet" href="./css/customize.css">
+    <title>School_Contest[2026-1]</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <!-- Logo -->
+        <span>
+            <a href="index.html">
+                <img src="/images/logo.png" alt="logo" />
+            </a>
+        </span>
+
+        <!-- Navigation -->
+        <ul>
+            <li>
+                <a href="index.html">الرئيسية</a>
+            </li>
+            <li>
+                <a href="activities.html">الأنشطة</a>
+            </li>
+            <li>
+                <a href="challenges.html">المساقات</a>
+            </li>
+            <li class="active">
+                <a href="customize.html">تخصيص</a>
+            </li>
+            <li >
+                <a href="whoWe.html">من نحن</a>
+            </li>
+        </ul>
+
+        <!-- SignIn Button -->
+        <button class="signIn">
+            <a href="signIn.html">تسجيل الدخول</a>
+        </button>
+
+        <!-- Menu Button -->
+        <div class="menu">
+            <button>
+                <i data-lucide="square-menu"></i>
+            </button>
+            <ul>
+                <li>
+                    <a href="index.html">الرئيسية</a>
+                </li>
+                <li>
+                    <a href="activities.html">الأنشطة</a>
+                </li>
+                <li>
+                    <a href="challenges.html">المساقات</a>
+                </li>
+                <li class="active">
+                    <a href="customize.html">تخصيص</a>
+                </li>
+                <li >
+                    <a href="whoWe.html">من نحن</a>
+                </li>
+                <li class="signIn">
+                    <a href="signIn.html">تسجيل الدخول</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Customize Section -->
+    <section class="customize-section">
+        <article>
+            <h1>تخصيص الصفحة:</h1>
+            <p>استمتع بتجربة استخدام مصممة لك، حيث تتيح لك هذه الصفحة تخصيص واجهتك وجعل مظهر الصفحة أقرب لأسلوبك، لتحصل على تجربة أكثر راحة وانسجامًا مع تفضيلاتك.</p>
+        </article>
+
+        <section class="colors-section">
+            <header>
+                <h2>الألوان:</h2>
+                <div>
+                    <button class="restart">
+                        <span>إعادة تعين</span>
+                        <span><i data-lucide="rotate-ccw"></i></span>
+                    </button>
+                    <!-- <button class="update">
+                        <span>تحديث</span>
+                        <span><i data-lucide="check"></i></span>
+                    </button> -->
+                </div>
+            </header>
+
+            <div class="customize-colors">
+                <div>
+                    <h4>الخلفيات:</h4>
+                    <div class="colors-wrapper bg">
+                        <label class="color-swatch bg-blue-75">
+                            <input type="color" class="bg-input blue-75" value="var(--bg-blue-75)"/>
+                        </label>
+                        <label class="color-swatch bg-blue-50">
+                            <input type="color" class="bg-input blue-50" />
+                        </label>
+                        <label class="color-swatch bg-blue-25">
+                            <input type="color" class="bg-input blue-25" />
+                        </label>
+                        <label class="color-swatch bg-third">
+                            <input type="color" class="bg-input third" />
+                        </label>
+                        <label class="color-swatch bg-secondary">
+                            <input type="color" class="bg-input secondary" />
+                        </label>
+                        <label class="color-swatch bg-primary">
+                            <input type="color" class="bg-input primary" />
+                        </label>
+                        <label class="color-swatch bg-error">
+                            <input type="color" class="bg-input error" />
+                        </label>
+                    </div>
+                </div>            
+
+                <div>
+                    <h4>النصوص:</h4>
+                    <div class="colors-wrapper text">
+                        <label class="color-swatch color-error">
+                            <input type="color" class="text-input error" />
+                        </label>
+                        <label class="color-swatch color-ads">
+                            <input type="color" class="text-input ads" />
+                        </label>
+                        <label class="color-swatch color-nav">
+                            <input type="color" class="text-input nav" />
+                        </label>
+                        <label class="color-swatch color-button-primary">
+                            <input type="color" class="text-input button-primary" />
+                        </label>
+                        <label class="color-swatch color-secondary">
+                            <input type="color" class="text-input secondary" />
+                        </label>
+                        <label class="color-swatch color-primary">
+                            <input type="color" class="text-input primary" />
+                        </label>
+                    </div>
+                </div>            
+
+                <div>
+                    <h4>الأزرار:</h4>
+                    <div class="colors-wrapper button">
+                        <label class="color-swatch button-third">
+                            <input type="color" class="button-input third" />
+                        </label>
+                        <label class="color-swatch button-secondary">
+                            <input type="color" class="button-input secondary" />
+                        </label>
+                        <label class="color-swatch button-primary">
+                            <input type="color" class="button-input primary" />
+                        </label>
+                    </div>
+                </div>            
+
+                <div>
+                    <h4>الحدود:</h4>
+                    <div class="colors-wrapper border">
+                        <label class="color-swatch border-skyblue">
+                            <input type="color" class="border-input skyblue" />
+                        </label>
+                        <label class="color-swatch border-ads">
+                            <input type="color" class="border-input ads" />
+                        </label>
+                        <label class="color-swatch border-half-primary">
+                            <input type="color" class="border-input half-primary" />
+                        </label>
+                        <label class="color-swatch border-third">
+                            <input type="color" class="border-input third" />
+                        </label>
+                        <label class="color-swatch border-secondary">
+                            <input type="color" class="border-input secondary" />
+                        </label>
+                        <label class="color-swatch border-primary">
+                            <input type="color" class="border-input primary" />
+                        </label>
+                        <label class="color-swatch border-error">
+                            <input type="color" class="border-input error" />
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul>
+            <li>
+                <a href="">
+                    <i data-lucide="twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i data-lucide="twitch"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i data-lucide="instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i data-lucide="youtube"></i>
+                </a>
+            </li>
+        </ul>
+
+        <article>
+            <span>&copy; 2025 منافس. جميع الحقوق محفوظة.</span>
+            |
+            <span>
+                من تطوير فريق مدرسة عليى بن جاسم
+            </span>
+        </article>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="./js/customize.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

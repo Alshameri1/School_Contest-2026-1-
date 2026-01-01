@@ -1,0 +1,73 @@
+body {
+    padding-top: var(--body-gap);
+}
+
+/* Vision Section */
+.cta.vision h1 {
+    font-size: var(--font-size-38);
+    white-space: nowrap;
+}
+.cta.vision p, .whoWe section article p {
+    font-size: var(--font-size-22);
+    line-height: var(--line-height-44);
+    text-align: inherit;
+}
+
+
+/* Who We Section */
+.whoWe section {
+    width: 100%;
+    max-width: var(--width-main);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-46);
+}
+.whoWe section article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-12);
+}
+.whoWe section article h1 {
+    font-size: var(--font-size-48);
+}
+
+.whoWe section table {
+    border-radius: var(--border-radius-16);
+    overflow: hidden;
+}
+.whoWe section table th, td {
+    border: 1px solid var(--border-half-primary);
+    padding: var(--padding-25);
+}
+.whoWe section table th {
+    font-weight: 600;
+    background-color: var(--bg-blue-25);
+}
+.whoWe section table td {
+    font-weight: 500;
+    background-color: var(--bg-blue-10);
+}
+
+
+
+
+/* CTA */
+.cta.cta-whoWe {
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-third);
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 845px) {
+    .cta.vision h1 {
+        white-space: wrap;
+    }
+    .cta.vision {
+        text-align: center;
+    }
+}

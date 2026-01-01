@@ -1,0 +1,177 @@
+body {
+    padding-top: var(--body-gap);
+}
+
+
+/* Customize Section */
+.customize-section {
+    width: 100%;
+    min-height: 550px;
+    max-width: var(--width-main);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--gap-36);
+}
+
+.customize-section article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-12);
+    align-items: inherit;
+}
+.customize-section article h1 {
+    font-size: var(--font-size-48);
+}
+.customize-section article p {
+    font-size: var(--font-size-22);
+    line-height: var(--line-height-44);
+    text-align: inherit;
+}
+.colors-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-36);
+    align-items: start;
+}
+
+.colors-section header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.colors-section header h2 {
+    font-size: var(--font-size-38);
+    font-weight: 600;
+}
+.colors-section header div {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-20);
+    align-items: center;
+}
+
+.colors-section header div button {
+    padding: 6px var(--padding-12);
+    border-radius: 10px;
+    display: flex;
+    gap: var(--gap-12);
+    align-items: center;
+    text-align: center;
+    font-size: var(--font-size-18);
+    font-weight: 500;
+}
+.colors-section header div button span:has(svg) {
+    display: flex;
+}
+.colors-section header div button svg {
+    width: var(--svg-size-24);
+    height: var(--svg-size-24);
+}
+
+.colors-section header div button.restart {
+    background-color: transparent;
+    border: 1px solid var(--border-primary);
+    color: var(--color-primary);
+}
+.colors-section header div button.update {
+    background-color: var(--bg-blue-75);
+    color: var(--color-button-primary);
+}
+
+
+.customize-colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.customize-colors > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-24);
+    align-items: flex-start;
+}
+
+.customize-colors h4 {
+    font-size: var(--font-size-22);
+    font-weight: 600;
+}
+
+.colors-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap-20);
+}
+
+.color-swatch {
+    position: relative;
+    width: var(--padding-40);
+    height: var(--padding-40);
+    border-radius: var(--border-radius-6);
+    border: 1px solid #838383;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.color-swatch input[type="color"] {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+.color-swatch:hover {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Background */
+.bg-blue-75   { background-color: var(--bg-blue-75); }
+.bg-blue-50   { background-color: var(--bg-blue-50); }
+.bg-blue-25   { background-color: var(--bg-blue-25); }
+.bg-third     { background-color: var(--bg-third); }
+.bg-secondary { background-color: var(--bg-secondary); }
+.bg-primary   { background-color: var(--bg-primary); }
+.bg-error     { background-color: var(--bg-error); }
+
+/* Text Color */
+.color-error          { background-color: var(--color-error); }
+.color-ads            { background-color: var(--color-ads); }
+.color-nav            { background-color: var(--color-nav); }
+.color-button-primary { background-color: var(--color-button-primary); }
+.color-secondary      { background-color: var(--color-secondary); }
+.color-primary        { background-color: var(--color-primary); }
+
+/* Button */
+.button-third     { background-color: var(--button-third); }
+.button-secondary { background-color: var(--button-secondary); }
+.button-primary   { background-color: var(--button-primary); }
+
+/* Border */
+.border-skyblue { background-color: var(--border-skyblue, #fff);}
+.border-ads { background-color: var(--border-ads, #fff); }
+.border-half-primary { background-color: var(--border-half-primary, #fff); }
+.border-third { background-color: var(--border-third, #fff); }
+.border-secondary { background-color: var(--border-secondary, #fff);}
+.border-primary { background-color: var(--border-primary, #fff);}
+.border-error { background-color: var(--border-error, #fff); }
+
+
+@media (max-width: 1000px) {
+    body {
+        margin-top: 20px;
+    }
+}

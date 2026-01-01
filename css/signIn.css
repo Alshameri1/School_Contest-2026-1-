@@ -1,0 +1,168 @@
+section.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-36);
+}
+section.main-section.signIn-section {
+    width: 510px;
+    height: 1000px;
+}
+section.main-section.register-section {
+    width: 1000px;
+    height: 1100px;
+}
+
+section.main-section form {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+}
+section.main-section header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-12);
+}
+section.main-section header h1 {
+    font-size: var(--font-size-32);
+}
+section.main-section header p {
+    font-size: var(--font-size-20);
+}
+
+section.main-section form .col-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-20);
+    width: 100%;
+}
+
+section.main-section form .col-inputs .row-inputs {
+    display: flex;
+    gap: var(--gap-20);
+    width: 100%;
+}
+
+
+.remember-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.remember-password span {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: var(--font-size-16);
+    color: var(--color-nav);
+}
+
+.remember-password input {
+    width: 18px;
+    height: 18px;
+    border-radius: var(--border-radius-6);
+    border: 1px solid var(--border-primary);
+}
+
+.remember-password label {
+    font-size: var(--font-size-16);
+    font-weight: 500;
+    display: flex;
+    gap: var(--gap-6);
+}
+
+.password-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-12);
+}
+
+.password-eye.eye-open {
+    display: none;
+}
+.password-eye.check-eye-open {
+    display: none;
+}
+
+
+/* Footer */
+section.main-section form footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-12);
+}
+
+section.main-section form footer h4 {
+    font-size: var(--font-size-16);
+}
+
+section.main-section form footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: var(--gap-12);
+    font-size: var(--font-size-16);
+}
+
+section.main-section form footer button {
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: var(--border-radius-16);
+    color: var(--color-button-primary);
+    background-color: var(--button-primary);
+    text-align: center;
+    width: 100%;
+}
+
+section.main-section form footer h4 {
+    font-weight: 400;
+    color: var(--color-nav);
+}
+
+section.main-section form footer h4 span {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 1330px) {
+    section.main-section.signIn-section {
+        width: 400px;
+    }
+    section.main-section.register-section {
+        width: 800px;
+    }
+    .remember-password input {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 845px) {
+    section.main-section.register-section {
+        width: 600px;
+    }
+}
+@media (max-width: 670px) {
+    section.main-section.register-section {
+        width: 500px;
+    }
+    .row-inputs {
+        flex-direction: column;
+        gap: var(--gap-20);
+    }
+}
+@media (max-width: 510px) {
+    section.main-section {
+        width: 300px !important;
+    }
+
+}
+@media (max-width: 330px) {
+    section.main-section {
+        width: 240px !important;
+    }
+}
