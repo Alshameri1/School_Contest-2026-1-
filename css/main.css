@@ -19,6 +19,7 @@
     --bg-blue-50: #0B62A8;
     --bg-blue-75: #00325A;
     --bg-error: #FEE7E8;
+    --bg-primary-20: #ffffff33;
     
     /* Border */
     --border-primary: #00325A;
@@ -378,6 +379,11 @@ form svg {
 #header > ul {
     display: flex;
     flex-direction: row;
+    padding: var(--padding-4);
+    border-radius: 100px;
+    transition: all 200ms ease;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
 }
 #header > ul li {
     padding: 8px 20px;

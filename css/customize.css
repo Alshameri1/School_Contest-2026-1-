@@ -146,6 +146,7 @@ body {
 .bg-secondary { background-color: var(--bg-secondary); }
 .bg-primary   { background-color: var(--bg-primary); }
 .bg-error     { background-color: var(--bg-error); }
+.bg-primary-20     { background-color: var(--bg-primary-20); }
 
 /* Text Color */
 .color-error          { background-color: var(--color-error); }
