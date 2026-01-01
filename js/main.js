@@ -5,27 +5,33 @@ Object.keys(window.localStorage).forEach(key => {
 
 
 // Header Scroll 
-let header = document.querySelector('#header')
+let header = document.querySelector('#header');
 let nav = header.querySelector('ul');
-let lastScroll = window.pageYOffset;
+let lastScroll = 0;
+const scrollThreshold = 10;
 
-const onScroll = () => {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener('scroll', () => {
+    const currentScroll = Math.max(window.pageYOffset, 0);
 
-    if (currentScroll <= 0) {
+    // Background
+    if (currentScroll === 0) {
         nav.style.backgroundColor = 'transparent';
     } else {
         nav.style.backgroundColor = 'var(--bg-primary-20)';
     }
 
-    if (currentScroll > lastScroll) {
-        header.style.cssText = 'opacity: 0; top: -30%;';
-    } else if (currentScroll < lastScroll) {
-        header.style.cssText = 'top: 30px; opacity: 1;';
+    const diff = currentScroll - lastScroll;
+
+    if (diff > scrollThreshold) {
+        // scroll down
+        header.style.opacity = '0';
+        header.style.top = '-30%';
+    } 
+    else if (diff < -scrollThreshold) {
+        // scroll up
+        header.style.opacity = '1';
+        header.style.top = '30px';
     }
 
     lastScroll = currentScroll;
-};
-
-window.addEventListener('scroll', onScroll, { passive: true });
-window.addEventListener('touchmove', onScroll, { passive: true });
+}, { passive: true });
