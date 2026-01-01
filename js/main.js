@@ -12,7 +12,7 @@ let lastScroll = window.pageYOffset;
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll == 0) {
+    if (currentScroll == 0 || currentScroll < 0 ||  0 > lastScroll) {
         nav.style.backgroundColor = 'transparent';
     } else {
         nav.style.backgroundColor = 'var(--bg-primary-20)';
