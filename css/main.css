@@ -362,6 +362,7 @@ form svg {
     position: fixed;
     top: 30px;
     z-index: 99;
+    transition: all 200ms ease;
 }
 #header a {
     font-weight: 500;
