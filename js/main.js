@@ -9,18 +9,23 @@ let header = document.querySelector('#header')
 let nav = header.querySelector('ul');
 let lastScroll = window.pageYOffset;
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+const onScroll = () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (currentScroll == 0 || currentScroll < 0 ||  0 > lastScroll) {
+    if (currentScroll <= 0) {
         nav.style.backgroundColor = 'transparent';
     } else {
         nav.style.backgroundColor = 'var(--bg-primary-20)';
     }
+
     if (currentScroll > lastScroll) {
-        header.style.cssText = 'opacity: 0; top: -30%; '
+        header.style.cssText = 'opacity: 0; top: -30%;';
     } else if (currentScroll < lastScroll) {
-        header.style.cssText = 'top: 30px; opacity: 1;'
+        header.style.cssText = 'top: 30px; opacity: 1;';
     }
+
     lastScroll = currentScroll;
-});
+};
+
+window.addEventListener('scroll', onScroll, { passive: true });
+window.addEventListener('touchmove', onScroll, { passive: true });
